@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_SymPy"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="WPF + SymPy" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Первое выражение: " HorizontalAlignment="Left" Margin="100,87,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="FirstExpr" Margin="230,90,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="20"/>
+
+        <Label Content="Второе выражение: " HorizontalAlignment="Left" Margin="100,127,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="SecondExpr" Margin="230,130,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="20"/>
+
+        <Label Content="Результат: " HorizontalAlignment="Left" Margin="100,227,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Width="122"/>
+        <TextBlock x:Name="ResultOutput" HorizontalAlignment="Center" Margin="0,232,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="340" Height="26"/>
+
+        <Button x:Name="ResultBtn" Content="Нажми меня!" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" Width="106" Click="ResultBtn_Click"/>
     </Grid>
 </Window>
